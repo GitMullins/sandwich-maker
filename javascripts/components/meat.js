@@ -1,21 +1,11 @@
 const meatsPriceInfo = {
-    tuna: 1.50,
-    pepperoni: 1.75,
-    turkey: 2.00
-};
-
-const meatsTypeInfo = {
-    type1: 'tuna',
-    type2: 'pepperoni',
-    type3: 'turkey'
+    tuna: 1,
+    pepperoni: 2,
+    turkey: 3
 };
 
 const getPrice = () => {
     return  meatsPriceInfo;
 };
 
-const getType = () => {
-    return meatsTypeInfo;
-}
-
-export default { getPrice, getType };
+export default { getPrice };

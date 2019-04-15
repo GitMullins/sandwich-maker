@@ -3,22 +3,24 @@ import cart from './cart.js';
 import meat from '../components/meat.js';
 import util from '../helpers/util.js';
 
-// const addToCartEvent = (e) => {
-//     e.preventDefault();
-//     const meatPrice = meats.getPrice();
-//     cart.setCart(meatPrice);
-//     cart.cartToDom();
+// const sandwichBuilder = () => {
+    // let sandwich = [];
+    const checkBoxFinder = () => {
+        let boxes = document.getElementsByClassName('form-check-input');
+        let types = [];
+        let prices = [];
+        for (var i=0; i<boxes.length; i++) {
+           if (boxes[i].checked) {
+              types.push(boxes[i].id);
+           }
+           if (document.getElementById(n) = object.keys(meats))
+        }
+        console.log(checkedBoxes);
+        console.log(prices);
+      }
 // };
 
-const makeStore = () => {
-    // const meatPrice = meat.getPrice();
-    // let domString = '<h2>Our only book</h2>';
-    // domString += `<h3>${meatPrice.value}`
-    // domString += `<button id="cart-button" class="btn btn-danger">Add to Cart</button>`
-    // util.printToDom('store-container', domString);
-    // document.getElementById('cart-button').addEventListener("click", addToCartEvent);
-    console.log(meat.getType());
-    console.log(meat.getPrice()['tuna']);
-};
 
-export default { makeStore };
+
+
+export default { checkBoxFinder };
